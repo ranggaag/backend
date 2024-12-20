@@ -12,8 +12,8 @@ const router = express.Router()
 
 router.get('/faq', getFaq)
 router.get('/faq/:id', getFaqById)
-router.get('/faq', saveFaq)
-router.get('/faq/:id', updateFaq)
-router.get('/faq/:id', deleteFaq)
+router.post('/faq', saveFaq)
+router.patch('/faq/:id', updateFaq)
+router.delete('/faq/:id', deleteFaq)
 
 export default router
