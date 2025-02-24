@@ -5,6 +5,9 @@ import ProductRoute from "./routes/ProductRoute.js"
 import CommentRoute from "./routes/CommentRoute.js"
 import TestimonyRoute from "./routes/TestimonyRoute.js"
 import FaqRoute from "./routes/FaqRoute.js"
+import MenuRoute from "./routes/MenuRoute.js"
+import GalleryRoute from "./routes/GalleryRoute.js"
+import DashboardRoute from "./dashboardRoutes/DashboardRoute.js"
 
 const app = express()
 
@@ -18,6 +21,9 @@ app.use(ProductRoute)
 app.use(CommentRoute)
 app.use(TestimonyRoute)
 app.use(FaqRoute)
+app.use(MenuRoute)
+app.use(GalleryRoute)
+app.use(DashboardRoute)
 
 
 

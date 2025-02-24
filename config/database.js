@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize"
 
 const db = new Sequelize('iafeclgw_website', 'iafeclgw_ragata', 'Fadris321!@##@!', {
-    host: 'ragata.my.id',
+    host: 'api.ragata.id',
     dialect: "mysql"
 })
 

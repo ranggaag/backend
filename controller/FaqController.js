@@ -48,14 +48,14 @@ export const getFaqById = async (req, res) => {
     }
 }
 
-export const saveFaq = () => {
+// export const saveFaq = () => {
     
-}
+// }
 
-export const updateFaq = () => {
+// export const updateFaq = () => {
     
-}
+// }
 
-export const deleteFaq = () => {
+// export const deleteFaq = () => {
     
-} 
+// } 

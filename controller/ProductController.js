@@ -50,7 +50,7 @@ export const getProductById = async(req, res) => {
 
 // input product
 
-export const saveProduct = (req, res) => {
+export const createProduct = (req, res) => {
     if(req.files === null) return res.status(400).json({
         status_code: 400,
         msg: "No File Uploaded"
@@ -62,6 +62,7 @@ export const saveProduct = (req, res) => {
     const ext = path.extname(file.name)
     const fileName = file.md5 + ext
     const url = `${req.protocol}://${req.get("host")}/images/${fileName}`
+    const url_product = req.body.url
     const allowedType = ['.png', '.jpg', 'jpeg']
 
     if(!allowedType.includes(ext.toLowerCase())) return res.status(422).json({msg: "Invalid images"})
@@ -77,7 +78,8 @@ export const saveProduct = (req, res) => {
                 product_name: productName,
                 product_category: productCategory,
                 product_image: fileName,
-                url_image: url
+                url_image: url,
+                url_product: url_product
             })
             res.status(201).json({
                 status_code: 201,

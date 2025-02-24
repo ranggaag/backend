@@ -10,7 +10,8 @@ const Product = db.define('product', {
         values: ['luxury', 'natural', 'basic']
     },
     product_image: DataTypes.STRING,
-    url_image: DataTypes.STRING
+    url_image: DataTypes.STRING,
+    url_product: DataTypes.STRING
 }, {
     tableName: 'tb_product'
 })
