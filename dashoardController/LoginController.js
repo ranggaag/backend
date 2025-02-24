@@ -7,7 +7,7 @@ import dotenv from "dotenv"
 dotenv.config()
 
 export const saveLogin = async (req, res) => {
-  if(!req.body) return res.status(400).json({msg: "No File Uploaded"})
+  if(!req.body) return res.status(400).json({msg: "Please login first"})
 
   const { username, password } = req.body
 
