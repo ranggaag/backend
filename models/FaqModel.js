@@ -12,6 +12,6 @@ const FaqRecord = db.define('tb_faq', {
 
 export default FaqRecord;
 
-(async() => {
-    await db.sync()
-})()
+// (async() => {
+//     await db.sync()
+// })()

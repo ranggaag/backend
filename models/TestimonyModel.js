@@ -15,6 +15,6 @@ const Testimony = db.define('testimony', {
 
 export default Testimony;
 
-(async() => {
-    await db.sync()
-})()
+// (async() => {
+//     await db.sync()
+// })()

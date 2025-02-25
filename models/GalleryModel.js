@@ -12,6 +12,6 @@ const Gallery = db.define('gallyer', {
 
 export default Gallery;
 
-(async() => {
-    await db.sync()
-})()
+// (async() => {
+//     await db.sync()
+// })()

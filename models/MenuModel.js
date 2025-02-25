@@ -12,6 +12,6 @@ const Menu = db.define('tb_menu', {
 
 export default Menu;
 
-(async() => {
-    await db.sync()
-})()
+// (async() => {
+//     await db.sync()
+// })()
